@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
           className="cursor-pointer invert"
         />
         <div className="flex flex-col md:flex-row md:items-start items-center gap-y-[40px] md:gap-x-[78px]">
-          {menuItems.map((menu, index) => (
+          {menuItems.map((menu) => (
             <ul
               key={menu.title}
               className="flex flex-col items-center md:items-start md:justify-start gap-y-[10px]"
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
           ))}
 
           <div className="flex flex-row items-center gap-x-[24px]">
-            {socialIcons.map((icon, idx) => {
+            {socialIcons.map((icon) => {
               return (
                 <Image
                   src={icon.src}

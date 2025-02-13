@@ -20,7 +20,6 @@ const ShortenBox = () => {
       if (!response.ok) throw new Error("Failed to shorten URL");
 
       const data = await response.json();
-      console.log(data);
       setShortenedUrls([
         {
           id: Date.now().toString(36),
@@ -77,7 +76,7 @@ const ShortenBox = () => {
         </div>
       </div>
       <div className="mt-[104px] w-full">
-        {shortenedUrls.map((url, idx) => {
+        {shortenedUrls.map((url) => {
           return (
             <div
               key={url.id}

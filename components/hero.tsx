@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
           className="text-center text-[18px] leading-[30px] tracking-[0.12px] 
         md:text-start font-medium md:leading-[36px] md:tracking-[0.15px] text-dark-gray"
         >
-          Build your brand's recognition and get detailed insights on how your
+          Build your brands recognition and get detailed insights on how your
           links are performing.
         </p>
         <button className="md:mt-[38px] rounded-full px-[24px] py-[9px] text-white bg-blue hover:bg-gray-blue cursor-pointer">
