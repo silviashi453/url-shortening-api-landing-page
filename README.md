@@ -1,9 +1,16 @@
 # URL Shortening Landing Page 🔗
 
-This is a challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G) to integrate with the Clean URI API and create a URL shortener with an optimized user interface.
+This challenge involves integrating with the Clean URI API to create a URL shortener with an optimized user interface.
 
 ## 🏗️ Tech Stack
 
-- **NextJS**
-- **TailwindCSS**
+- **Next.js**
+- **Tailwind CSS**
 - **Clean URI API** (for URL shortening)
+
+## 🎯 Features
+
+- Shorten any valid URL
+- Copy the shortened link to the clipboard with a single click
+- View an optimized layout based on the device's screen size
+- See hover and focus states for all interactive elements
