@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
         </button>
         <div
           className={`${
-            isOpen ? "hidden" : "flex"
+            isOpen ? "flex" : "hidden"
           } absolute top-full bg-purple rounded-xl py-[20px] md:py-0 mt-[20px] md:mt-0 md:bg-transparent md:relative flex-col items-center justify-center md:flex-row md:justify-between md:items-center w-full`}
         >
           <div className="flex flex-col items-center gap-y-[20px] mb-[20px] md:flex-row md:gap-x-[37px] md:mb-0">
