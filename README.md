@@ -11,6 +11,7 @@ This challenge involves integrating with the Clean URI API to create a URL short
 ## 🎯 Features
 
 - Shorten any valid URL
+- See a list of their shortened links, even after refreshing the browser
 - Copy the shortened link to the clipboard with a single click
 - View an optimized layout based on the device's screen size
 - See hover and focus states for all interactive elements

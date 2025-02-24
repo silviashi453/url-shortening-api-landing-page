@@ -1,11 +1,23 @@
 "use client";
-import React, { useState } from "react";
+
+import React, { useEffect, useState } from "react";
 
 const ShortenBox = () => {
   const [url, setUrl] = useState("");
   const [shortenedUrls, setShortenedUrls] = useState<
     { id: string; original: string; short: string; copied: boolean }[]
   >([]);
+
+  useEffect(() => {
+    const storedUrls = localStorage.getItem("shortenedUrls");
+    if (storedUrls) {
+      setShortenedUrls(JSON.parse(storedUrls));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("shortenedUrls", JSON.stringify(shortenedUrls));
+  }, [shortenedUrls]);
 
   const handleShorten = async () => {
     if (!url.trim()) return;
